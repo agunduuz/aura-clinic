@@ -15,7 +15,7 @@ export async function GET(request: NextRequest) {
     const parentSlug = searchParams.get("parentSlug");
     const locale = searchParams.get("locale") || "tr";
 
-    const where: any = { locale };
+    const where: { locale: string; parentSlug?: string } = { locale };
     if (parentSlug) {
       where.parentSlug = parentSlug;
     }

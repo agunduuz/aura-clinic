@@ -425,7 +425,7 @@ export default function AdminSidebar() {
 
     return [
       ...subcategories.map((sub) => ({
-        name: sub.title,
+        name: sub.title || "İsimsiz",
         href: `${editBasePath}/${sub.id}`,
         isDynamic: true,
       })),
@@ -538,7 +538,7 @@ export default function AdminSidebar() {
               href: "/admin/surgical-categories?create=true",
             },
             ...surgicalCategories.map((cat) => ({
-              name: cat.title,
+              name: cat.title || "İsimsiz",
               href: `/admin/surgical-categories?edit=${cat.id}`,
               isDynamic: true,
             })),
