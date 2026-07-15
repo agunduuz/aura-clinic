@@ -1,9 +1,9 @@
 // components/SurgicalAesthetics/CTA.tsx
 "use client";
 
-import Link from "next/link";
-import { Phone } from "lucide-react";
 import type { PageData } from "@/types/surgical-aesthetics";
+import { Phone } from "lucide-react";
+import Link from "next/link";
 
 interface CTAProps {
   data: PageData;
@@ -22,7 +22,7 @@ export default function CTA({ data }: CTAProps) {
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         {/* Phone Button */}
         <Link
-          href="tel:+902125612322"
+          href="tel:+902121111111"
           className="flex items-center gap-2 bg-white text-primary font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105"
         >
           <Phone className="w-6 h-6" />

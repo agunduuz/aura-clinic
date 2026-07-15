@@ -1,6 +1,6 @@
 // app/api/send-email/route.ts
-import { Resend } from "resend";
 import { NextRequest, NextResponse } from "next/server";
+import { Resend } from "resend";
 
 // Resend client'ı başlat
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -30,8 +30,8 @@ export async function POST(request: NextRequest) {
     // Email gönder
     const { data, error } = await resend.emails.send({
       from:
-        process.env.EMAIL_FROM || "Veneta Clinic <noreply@venetaclinic.com>",
-      to: [process.env.EMAIL_TO || "eyup17@gmail.com"],
+        process.env.EMAIL_FROM || "Aura Clinic <noreply@auraclinic.com>",
+      to: [process.env.EMAIL_TO || "auraclinic@gmail.com"],
       replyTo: from_email,
       subject: `🆕 Yeni İletişim Formu - ${from_name}`,
       html: `
@@ -90,7 +90,7 @@ export async function POST(request: NextRequest) {
           <body>
             <div class="container">
               <div class="header">
-                <h1 style="margin: 0;">🏥 Veneta Clinic</h1>
+                <h1 style="margin: 0;">🏥 Aura Clinic</h1>
                 <p style="margin: 10px 0 0 0;">Yeni İletişim Formu</p>
               </div>
               <div class="content">
@@ -98,24 +98,24 @@ export async function POST(request: NextRequest) {
                   <span class="label">👤 İsim Soyisim:</span>
                   <div class="value">${from_name}</div>
                 </div>
-                
+
                 <div class="field">
                   <span class="label">📧 Email:</span>
                   <div class="value">${from_email}</div>
                 </div>
-                
+
                 <div class="field">
                   <span class="label">📱 Telefon:</span>
                   <div class="value">${phone}</div>
                 </div>
-                
+
                 <div class="field">
                   <span class="label">💬 Mesaj:</span>
                   <div class="value">${message.replace(/\n/g, "<br>")}</div>
                 </div>
-                
+
                 <div class="footer">
-                  <p>Bu email Veneta Clinic iletişim formundan gönderilmiştir.</p>
+                  <p>Bu email Aura Clinic iletişim formundan gönderilmiştir.</p>
                   <p>📅 ${new Date().toLocaleString("tr-TR", {
                     dateStyle: "full",
                     timeStyle: "short",

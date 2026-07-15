@@ -2,8 +2,8 @@
 "use client";
 
 import { useLocale } from "@/lib/i18n/context";
+import { MessageCircle, Phone } from "lucide-react";
 import Link from "next/link";
-import { Phone, MessageCircle } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 interface CTAData {
@@ -70,14 +70,14 @@ const LazerCTA = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
-            href="tel:+902125612322"
+            href="tel:+902121111111"
             className="bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 inline-flex items-center justify-center gap-2"
           >
             <Phone className="w-5 h-5" />
             {data.ctaButtonPhone}
           </Link>
           <Link
-            href="https://wa.me/905325612322"
+            href="https://wa.me/905321111111"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#25D366] text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 inline-flex items-center justify-center gap-2"

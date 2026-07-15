@@ -1,9 +1,9 @@
 // components/HairTransplant/CTA.tsx
 "use client";
 
-import { useEffect, useState } from "react";
-import Link from "next/link";
 import { Phone } from "lucide-react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 interface CTAData {
   ctaTitle: string;
@@ -59,7 +59,7 @@ export default function CTA({ locale }: CTAProps) {
 
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <Link
-          href="tel:+902125612322"
+          href="tel:+902121111111"
           className="flex items-center gap-2 bg-white text-primary font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105"
         >
           <Phone className="w-6 h-6" />

@@ -18,7 +18,7 @@ export async function seedTestimonials(prisma: PrismaClient) {
           name: "Ayşe Demir",
           procedure: "Burun Estetiği",
           comment:
-            "Veneta Klinik'te yaptırdığım burun estetiği ameliyatı hayallerimin ötesinde bir sonuç verdi. Doktor bey ve ekibi çok profesyonel, ameliyat öncesi ve sonrası ilgileri harikaydı.",
+            "Aura Klinik'te yaptırdığım burun estetiği ameliyatı hayallerimin ötesinde bir sonuç verdi. Doktor bey ve ekibi çok profesyonel, ameliyat öncesi ve sonrası ilgileri harikaydı.",
           rating: 5,
           imageUrl:
             "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -42,7 +42,7 @@ export async function seedTestimonials(prisma: PrismaClient) {
           name: "Zeynep Kaya",
           procedure: "Lazer Epilasyon",
           comment:
-            "Lazer epilasyon seanslarım harika geçti. Ağrısız ve etkili bir uygulama. Artık tüy derdim yok. Teşekkürler Veneta Klinik!",
+            "Lazer epilasyon seanslarım harika geçti. Ağrısız ve etkili bir uygulama. Artık tüy derdim yok. Teşekkürler Aura Klinik!",
           rating: 5,
           imageUrl:
             "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -60,7 +60,7 @@ export async function seedTestimonials(prisma: PrismaClient) {
           name: "Sarah Johnson",
           procedure: "Rhinoplasty",
           comment:
-            "The rhinoplasty I had at Veneta Clinic exceeded my expectations. The doctor and team were very professional, and their care before and after surgery was excellent.",
+            "The rhinoplasty I had at Aura Clinic exceeded my expectations. The doctor and team were very professional, and their care before and after surgery was excellent.",
           rating: 5,
           imageUrl:
             "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -84,7 +84,7 @@ export async function seedTestimonials(prisma: PrismaClient) {
           name: "Emma Wilson",
           procedure: "Laser Hair Removal",
           comment:
-            "My laser hair removal sessions went great. Painless and effective treatment. I no longer have hair problems. Thank you Veneta Clinic!",
+            "My laser hair removal sessions went great. Painless and effective treatment. I no longer have hair problems. Thank you Aura Clinic!",
           rating: 5,
           imageUrl:
             "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600",

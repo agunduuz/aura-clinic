@@ -2,7 +2,7 @@
 
 ## Current Implementation
 
-The contact form is now set up to send emails to `eyup17@gmail.com` when the submit button is clicked. The current implementation includes:
+The contact form is now set up to send emails to `auraclinic@gmail.com` when the submit button is clicked. The current implementation includes:
 
 - ✅ Form validation
 - ✅ Loading states
@@ -16,7 +16,6 @@ The contact form is now set up to send emails to `eyup17@gmail.com` when the sub
 
 1. **Sign up at [EmailJS](https://www.emailjs.com/)**
 2. **Create an Email Service:**
-
    - Go to Email Services
    - Add Gmail service
    - Connect your Gmail account
@@ -27,7 +26,7 @@ The contact form is now set up to send emails to `eyup17@gmail.com` when the sub
    - Use this template:
 
 ```html
-<h2>Yeni İletişim Formu Mesajı - Veneta Klinik</h2>
+<h2>Yeni İletişim Formu Mesajı - Aura Klinik</h2>
 <p><strong>Gönderen:</strong> {{from_name}}</p>
 <p><strong>E-posta:</strong> {{from_email}}</p>
 <p><strong>Telefon:</strong> {{phone}}</p>
@@ -64,7 +63,6 @@ The contact form is now set up to send emails to `eyup17@gmail.com` when the sub
    ```
 
 2. **Create a Gmail app password:**
-
    - Go to Google Account settings
    - Security → 2-Step Verification → App passwords
    - Generate a password for "Mail"

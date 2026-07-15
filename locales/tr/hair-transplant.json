@@ -2,10 +2,10 @@
   "hero": {
     "title": "Saç Ekimi İstanbul",
     "subtitle": "FUE Tekniği ile Doğal Sonuçlar",
-    "description": "İstanbul'da saç ekimi tedavisi için Veneta Klinik'i tercih edin. En gelişmiş FUE tekniği, uzman cerrahlar ve doğal sonuçlarla kalıcı saç restorasyonu elde edin.",
+    "description": "İstanbul'da saç ekimi tedavisi için Aura Klinik'i tercih edin. En gelişmiş FUE tekniği, uzman cerrahlar ve doğal sonuçlarla kalıcı saç restorasyonu elde edin.",
     "ctaReviews": "Müşteri Yorumları",
-    "ctaPhone": "0212 561 23 22",
-    "imageAlt": "Saç Ekimi - Veneta Klinik"
+    "ctaPhone": "0212 111 11 11",
+    "imageAlt": "Saç Ekimi - Aura Klinik"
   },
   "features": {
     "feature1Title": "FUE Tekniği",
@@ -17,7 +17,7 @@
   },
   "fueSection": {
     "title": "FUE (Follicular Unit Extraction) Saç Ekimi Tekniği",
-    "description": "Veneta Klinik'te kullanılan FUE tekniği, saç ekimi alanında en gelişmiş ve güvenli yöntemdir. Bu teknik ile saç kökleri tek tek alınarak saçsız bölgelere nakledilir, doğal görünüm elde edilir.",
+    "description": "Aura Klinik'te kullanılan FUE tekniği, saç ekimi alanında en gelişmiş ve güvenli yöntemdir. Bu teknik ile saç kökleri tek tek alınarak saçsız bölgelere nakledilir, doğal görünüm elde edilir.",
     "advantagesTitle": "FUE Tekniğinin Avantajları",
     "advantage1": "İz bırakmayan minimal invaziv teknik",
     "advantage2": "Doğal saç çizgisi oluşturma",
@@ -54,7 +54,7 @@
     "phase2Item4": "Düzenli kontroller"
   },
   "whyUs": {
-    "title": "Neden Veneta Klinik?",
+    "title": "Neden Aura Klinik?",
     "reason1Title": "15+ Yıl Deneyim",
     "reason1Description": "Binlerce başarılı saç ekimi",
     "reason2Title": "FUE Tekniği",
@@ -82,7 +82,7 @@
   "cta": {
     "title": "Hemen Randevu Alın",
     "description": "Ücretsiz muayene ve kişiye özel saç ekimi planı için hemen iletişime geçin",
-    "ctaPhone": "0212 561 23 22",
+    "ctaPhone": "0212 111 11 11",
     "ctaWhatsApp": "WhatsApp"
   }
 }

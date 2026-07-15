@@ -1,8 +1,8 @@
 // components/Header/PhoneButton.tsx
 "use client";
-import { motion } from "framer-motion";
 import { useTranslation } from "@/lib/i18n/context";
-import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const PhoneButton = () => {
   const { t } = useTranslation();
@@ -13,7 +13,7 @@ const PhoneButton = () => {
   }, []);
 
   const handlePhoneClick = () => {
-    const phoneNumber = "+902125612322";
+    const phoneNumber = "+902121111111";
     const phoneUrl = `tel:${phoneNumber}`;
     window.location.href = phoneUrl;
   };
@@ -31,7 +31,7 @@ const PhoneButton = () => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
       onClick={handlePhoneClick}
-      className="fixed bottom-20 right-6 z-50 bg-blue-500 hover:bg-blue-600 text-white 
+      className="fixed bottom-20 right-6 z-50 bg-blue-500 hover:bg-blue-600 text-white
                  p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300
                  flex items-center justify-center group mb-2"
       aria-label={t("common.cta.phoneTooltip")}
@@ -46,7 +46,7 @@ const PhoneButton = () => {
       </svg>
 
       <div
-        className="absolute right-full mr-3 px-3 py-2 bg-gray-900 text-white text-sm rounded-lg 
+        className="absolute right-full mr-3 px-3 py-2 bg-gray-900 text-white text-sm rounded-lg
                       opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap
                       hidden md:block"
         suppressHydrationWarning

@@ -831,7 +831,7 @@ export default function PageSubcategoryModal({
                             "Sayfa Başlığı"}
                         </p>
                         <p className="text-green-700 text-sm">
-                          venetaclinic.com/{formData.parentSlug}/
+                          auraclinic.com/{formData.parentSlug}/
                           {formData.slug || "sayfa-slug"}
                         </p>
                         <p className="text-gray-600 text-sm line-clamp-2">

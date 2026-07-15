@@ -139,7 +139,7 @@ export default function LoginPage() {
             </svg>
           </div>
           <h1 className="mt-6 text-4xl font-bold bg-gradient-to-r from-[#b2d6a1] to-[#68947c] bg-clip-text text-transparent font-playfair">
-            Veneta Clinic
+            Aura Clinic
           </h1>
           <p className="mt-2 text-base text-[#2d3436] font-medium">
             Admin Panel Girişi
@@ -185,7 +185,7 @@ export default function LoginPage() {
                       ? "border-red-500"
                       : "border-[#dcebd5]"
                   }`}
-                  placeholder="admin@venetaclinic.com"
+                  placeholder="admin@auraclinic.com"
                 />
                 {emailTouched && email && (
                   <div className="absolute inset-y-0 right-0 pr-4 flex items-center">
@@ -531,7 +531,7 @@ export default function LoginPage() {
         {/* Footer */}
         <div className="text-center">
           <p className="text-sm text-[#68947c]">
-            © 2024 Veneta Clinic. Tüm hakları saklıdır.
+            © 2024 Aura Clinic. Tüm hakları saklıdır.
           </p>
         </div>
       </div>

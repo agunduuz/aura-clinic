@@ -2,10 +2,10 @@
   "hero": {
     "title": "Ameliyatlı Estetik İstanbul",
     "subtitle": "Uzman Cerrahlarla Garantili Sonuç",
-    "description": "İstanbul'da ameliyatlı estetik tedavileri için Veneta Klinik'i tercih edin. Yüz, vücut ve meme estetiğinde en güncel teknikler, uzman cerrahlar ve uygun fiyatlarla doğal ve kalıcı sonuçlar elde edin.",
+    "description": "İstanbul'da ameliyatlı estetik tedavileri için Aura Klinik'i tercih edin. Yüz, vücut ve meme estetiğinde en güncel teknikler, uzman cerrahlar ve uygun fiyatlarla doğal ve kalıcı sonuçlar elde edin.",
     "ctaReviews": "Müşteri Yorumları",
-    "ctaPhone": "0212 561 23 22",
-    "imageAlt": "Ameliyatlı Estetik - Veneta Klinik İstanbul"
+    "ctaPhone": "0212 111 11 11",
+    "imageAlt": "Ameliyatlı Estetik - Aura Klinik İstanbul"
   },
   "features": {
     "feature1Title": "Uzman Cerrahlar",
@@ -80,7 +80,7 @@
     "step3Description": "Düzenli kontroller ile iyileşme süreci takip edilir, doğal ve kalıcı sonuçlar elde edilir."
   },
   "whyUs": {
-    "title": "Neden Veneta Klinik?",
+    "title": "Neden Aura Klinik?",
     "reason1Title": "15+ Yıl Deneyim",
     "reason1Description": "Binlerce başarılı ameliyat",
     "reason2Title": "Uzman Cerrahlar",
@@ -106,7 +106,7 @@
   "cta": {
     "title": "Hemen Randevu Alın",
     "description": "Ücretsiz muayene ve kişiye özel tedavi planı için hemen iletişime geçin",
-    "ctaPhone": "0212 561 23 22",
+    "ctaPhone": "0212 111 11 11",
     "ctaWhatsApp": "WhatsApp"
   }
 }

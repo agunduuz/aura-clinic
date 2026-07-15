@@ -130,7 +130,7 @@ const LazerPricing = () => {
                 </p>
               </div>
               <Link
-                href="tel:+902125612322"
+                href="tel:+902121111111"
                 className={`block text-center px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${colors.button}`}
               >
                 {data.pricingCallText}
