@@ -1,23 +1,23 @@
 // components/CategoryComponent/EnglishCategoryPageContent.tsx
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  Award,
-  Users,
-  Clock,
-  Shield,
-  Star,
-  CheckCircle,
-  Phone,
-  MapPin,
-  Calendar,
-  Heart,
-  Zap,
-  TrendingUp,
+    Award,
+    Calendar,
+    CheckCircle,
+    Clock,
+    Heart,
+    MapPin,
+    Phone,
+    Shield,
+    Star,
+    TrendingUp,
+    Users,
+    Zap,
 } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import GallerySlider from "./GallerySlider";
 
 // Motion variants
@@ -236,7 +236,7 @@ export default function EnglishCategoryPageContent({
                   whileTap="tap"
                 >
                   <Link
-                    href="tel:+902125612322"
+                    href="tel:+902121111111"
                     target="_blank"
                     className="bg-primary text-primary-foreground px-8 py-4 rounded-full font-semibold hover:bg-primary/90 transition-all duration-300 shadow-lg block"
                   >
@@ -268,7 +268,7 @@ export default function EnglishCategoryPageContent({
               <div className="relative">
                 <Image
                   src={operationInfo?.image || "/images/doctors-team.jpg"}
-                  alt={`${pageTitle} - Veneta Clinic Expert Doctors`}
+                  alt={`${pageTitle} - Aura Clinic Expert Doctors`}
                   width={500}
                   height={400}
                   className="rounded-2xl shadow-2xl object-cover"
@@ -338,7 +338,7 @@ export default function EnglishCategoryPageContent({
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Why Choose Veneta Clinic?
+              Why Choose Aura Clinic?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               As Turkey&apos;s most reliable aesthetic clinic, we provide the
@@ -398,7 +398,7 @@ export default function EnglishCategoryPageContent({
             >
               <GallerySlider
                 images={operationInfo.images}
-                alt={`${pageTitle} - Veneta Clinic Gallery`}
+                alt={`${pageTitle} - Aura Clinic Gallery`}
               />
             </motion.div>
           </div>
@@ -449,7 +449,7 @@ export default function EnglishCategoryPageContent({
             <motion.div className="relative" variants={whyChooseImageVariants}>
               <Image
                 src="/images/klinik-resimleri.jpeg"
-                alt="Veneta Clinic Modern Clinic Environment"
+                alt="Aura Clinic Modern Clinic Environment"
                 width={600}
                 height={400}
                 className="rounded-2xl shadow-xl object-cover"
@@ -588,7 +588,7 @@ export default function EnglishCategoryPageContent({
 
               <div className="bg-primary/10 rounded-xl p-6 mb-8">
                 <h3 className="text-xl font-semibold mb-3 text-primary">
-                  Why Should You Choose Veneta Clinic?
+                  Why Should You Choose Aura Clinic?
                 </h3>
                 <ul className="space-y-2 text-muted-foreground">
                   <li className="flex items-center gap-2">
@@ -660,7 +660,7 @@ export default function EnglishCategoryPageContent({
                     whileTap="tap"
                   >
                     <Link
-                      href="tel:+902125612322"
+                      href="tel:+902121111111"
                       className="bg-white text-primary px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 block"
                     >
                       <Phone className="h-5 w-5 inline mr-2" />

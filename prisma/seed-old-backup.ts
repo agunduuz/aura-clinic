@@ -1,7 +1,7 @@
 // prisma/seed-old-backup.ts
 import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcryptjs";
-import { trOperations, enOperations } from "../data/operations";
+import { enOperations, trOperations } from "../data/operations";
 
 const prisma = new PrismaClient();
 
@@ -64,7 +64,7 @@ async function seedSurgicalCategories() {
         patientsCount: "15,000+",
         experienceYears: "15+",
         rating: "4.9/5",
-        metaTitle: `${data.title} İstanbul | Veneta Clinic`,
+        metaTitle: `${data.title} İstanbul | Aura Clinic`,
         metaDescription: data.description,
         metaKeywords: data.title.toLowerCase(),
         published: true,
@@ -247,7 +247,7 @@ async function seedSurgicalCategories() {
         patientsCount: "15,000+",
         experienceYears: "15+",
         rating: "4.9/5",
-        metaTitle: `${enData.title} Istanbul | Veneta Clinic`,
+        metaTitle: `${enData.title} Istanbul | Aura Clinic`,
         metaDescription: enData.description,
         metaKeywords: enData.title.toLowerCase(),
         published: true,
@@ -390,14 +390,14 @@ async function main() {
   // ADMIN USER
   // ========================================
   const existingAdmin = await prisma.user.findUnique({
-    where: { email: "admin@venetaclinic.com" },
+    where: { email: "admin@auraclinic.com" },
   });
 
   if (!existingAdmin) {
     const hashedPassword = await bcrypt.hash("Admin123!", 10);
     await prisma.user.create({
       data: {
-        email: "admin@venetaclinic.com",
+        email: "admin@auraclinic.com",
         password: hashedPassword,
         name: "Admin User",
         role: "admin",
@@ -462,9 +462,9 @@ async function main() {
     await prisma.aboutSection.create({
       data: {
         locale: "tr",
-        title: "Veneta Klinik Hakkında",
+        title: "Aura Klinik Hakkında",
         description:
-          "Veneta Klinik olarak, sağlık ve estetik alanında 15 yıllık deneyimimizle, hastaların yaşam kalitesini artırmayı ve kendilerini daha iyi hissetmelerini sağlamayı amaçlıyoruz. Modern tıbbın imkanlarını kullanarak, güvenli ve etkili tedaviler sunuyoruz.",
+          "Aura Klinik olarak, sağlık ve estetik alanında 15 yıllık deneyimimizle, hastaların yaşam kalitesini artırmayı ve kendilerini daha iyi hissetmelerini sağlamayı amaçlıyoruz. Modern tıbbın imkanlarını kullanarak, güvenli ve etkili tedaviler sunuyoruz.",
         buttonText: "Devamını Oku",
         buttonLink: "/hakkimizda",
         imageUrl: "/images/about-clinic.jpg",
@@ -476,9 +476,9 @@ async function main() {
     await prisma.aboutSection.create({
       data: {
         locale: "en",
-        title: "About Veneta Clinic",
+        title: "About Aura Clinic",
         description:
-          "As Veneta Clinic, with our 15 years of experience in health and aesthetics, we aim to improve the quality of life of patients and make them feel better. Using the possibilities of modern medicine, we offer safe and effective treatments.",
+          "As Aura Clinic, with our 15 years of experience in health and aesthetics, we aim to improve the quality of life of patients and make them feel better. Using the possibilities of modern medicine, we offer safe and effective treatments.",
         buttonText: "Read More",
         buttonLink: "/about",
         imageUrl: "/images/about-clinic.jpg",
@@ -708,7 +708,7 @@ async function main() {
           name: "Ayşe Demir",
           procedure: "Burun Estetiği",
           comment:
-            "Veneta Klinik'te yaptırdığım burun estetiği ameliyatı hayallerimin ötesinde bir sonuç verdi. Doktor bey ve ekibi çok profesyonel, ameliyat öncesi ve sonrası ilgileri harikaydı.",
+            "Aura Klinik'te yaptırdığım burun estetiği ameliyatı hayallerimin ötesinde bir sonuç verdi. Doktor bey ve ekibi çok profesyonel, ameliyat öncesi ve sonrası ilgileri harikaydı.",
           rating: 5,
           imageUrl:
             "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -732,7 +732,7 @@ async function main() {
           name: "Zeynep Kaya",
           procedure: "Lazer Epilasyon",
           comment:
-            "Lazer epilasyon seanslarım harika geçti. Ağrısız ve etkili bir uygulama. Artık tüy derdim yok. Teşekkürler Veneta Klinik!",
+            "Lazer epilasyon seanslarım harika geçti. Ağrısız ve etkili bir uygulama. Artık tüy derdim yok. Teşekkürler Aura Klinik!",
           rating: 5,
           imageUrl:
             "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -750,7 +750,7 @@ async function main() {
           name: "Sarah Johnson",
           procedure: "Rhinoplasty",
           comment:
-            "The rhinoplasty I had at Veneta Clinic exceeded my expectations. The doctor and team were very professional, and their care before and after surgery was excellent.",
+            "The rhinoplasty I had at Aura Clinic exceeded my expectations. The doctor and team were very professional, and their care before and after surgery was excellent.",
           rating: 5,
           imageUrl:
             "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -774,7 +774,7 @@ async function main() {
           name: "Emma Wilson",
           procedure: "Laser Hair Removal",
           comment:
-            "My laser hair removal sessions went great. Painless and effective treatment. I no longer have hair problems. Thank you Veneta Clinic!",
+            "My laser hair removal sessions went great. Painless and effective treatment. I no longer have hair problems. Thank you Aura Clinic!",
           rating: 5,
           imageUrl:
             "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -945,17 +945,17 @@ async function main() {
     await prisma.footerContent.create({
       data: {
         locale: "tr",
-        phone: "+90 212 561 23 22",
+        phone: "+90 212 111 11 11",
         phoneSecondary: null,
-        email: "info@venetaclinic.com",
+        email: "info@auraclinic.com",
         address: "İstanbul, Türkiye",
         mapLink: null,
-        facebookUrl: "https://facebook.com/venetaclinic",
-        instagramUrl: "https://instagram.com/venetaclinic",
-        twitterUrl: "https://twitter.com/venetaclinic",
-        linkedinUrl: "https://linkedin.com/company/venetaclinic",
+        facebookUrl: "https://facebook.com/auraclinic",
+        instagramUrl: "https://instagram.com/auraclinic",
+        twitterUrl: "https://twitter.com/auraclinic",
+        linkedinUrl: "https://linkedin.com/company/auraclinic",
         youtubeUrl: null,
-        copyrightText: "© 2024 Veneta Clinic. Tüm hakları saklıdır.",
+        copyrightText: "© 2024 Aura Clinic. Tüm hakları saklıdır.",
       },
     });
 
@@ -963,17 +963,17 @@ async function main() {
     await prisma.footerContent.create({
       data: {
         locale: "en",
-        phone: "+90 212 561 23 22",
+        phone: "+90 212 111 11 11",
         phoneSecondary: null,
-        email: "info@venetaclinic.com",
+        email: "info@auraclinic.com",
         address: "Istanbul, Turkey",
         mapLink: null,
-        facebookUrl: "https://facebook.com/venetaclinic",
-        instagramUrl: "https://instagram.com/venetaclinic",
-        twitterUrl: "https://twitter.com/venetaclinic",
-        linkedinUrl: "https://linkedin.com/company/venetaclinic",
+        facebookUrl: "https://facebook.com/auraclinic",
+        instagramUrl: "https://instagram.com/auraclinic",
+        twitterUrl: "https://twitter.com/auraclinic",
+        linkedinUrl: "https://linkedin.com/company/auraclinic",
         youtubeUrl: null,
-        copyrightText: "© 2024 Veneta Clinic. All rights reserved.",
+        copyrightText: "© 2024 Aura Clinic. All rights reserved.",
       },
     });
     console.log("✅ Footer Content created (TR & EN)!");
@@ -1577,7 +1577,7 @@ async function main() {
       data: {
         locale: "en",
         title: "Customer Reviews",
-        href: "https://www.google.com/search?sca_esv=6b19787a6a994d6b&sxsrf=AE3TifO7ziWVrPJR7-exDpI2Tc4SHaPgDg:1750273044954&q=lassarium+ni%C5%9Fanta%C5%9F%C4%B1&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E-lKDiz5ZMaKtR0Xzei2bM2K9BLcTk2LlwS4-SH1VUmb6Z4MtebRYz07tnCdFD-x2s953po%3D&uds=AOm0WdEAlSiTiojV6t08JvKtroEmny9Y3G9YSQidmqyrjkNTmw8Y6m2RTAum_iwvoDAao2eBv66DvL4E8-5RROD8YZlw107ephAqUuJc8s73RtQNXzX1-CtBWOu2ptMEq-8LI5cPc6kM&sa=X&ved=2ahUKEwjE3-qY0_uNAxVERfEDHf01CNwQ3PALegQIHhAE&biw=1728&bih=992&dpr=2",
+        href: "",
         parentId: null,
         order: 6,
         active: true,
@@ -1624,24 +1624,24 @@ async function main() {
         formTitle: "İletişim Bilgileri",
         formDescription:
           "Aşağıdaki bilgilerden bize ulaşabilir, size en uygun zamanı bulabiliriz.",
-        happyCustomersText: "500+ Mutlu Müşteri",
+        happyCustomersText: "a00+ Mutlu Müşteri",
 
         // Google Reviews
-        reviewsRating: "4.8",
-        reviewsText: "Google'da 250+ değerlendirme",
+        reviewsRating: "4.9",
+        reviewsText: "Google'da 100+ değerlendirme",
         reviewsLink:
-          "https://www.google.com/search?sca_esv=6b19787a6a994d6b&sxsrf=AE3TifO7ziWVrPJR7-exDpI2Tc4SHaPgDg:1750273044954&q=lassarium+ni%C5%9Fanta%C5%9F%C4%B1&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E-lKDiz5ZMaKtR0Xzei2bM2K9BLcTk2LlwS4-SH1VUmb6Z4MtebRYz07tnCdFD-x2s953po%3D&uds=AOm0WdEAlSiTiojV6t08JvKtroEmny9Y3G9YSQidmqyrjkNTmw8Y6m2RTAum_iwvoDAao2eBv66DvL4E8-5RROD8YZlw107ephAqUuJc8s73RtQNXzX1-CtBWOu2ptMEq-8LI5cPc6kM&sa=X&ved=2ahUKEwjE3-qY0_uNAxVERfEDHf01CNwQ3PALegQIHhAE&biw=1728&bih=992&dpr=2",
+          "",
 
         // Contact Cards
         addressLabel: "Adresimiz",
         addressText:
-          "Teşvikiye, Halaskargazi Cd. No:38/B, 34365 Şişli/İstanbul",
+          "Pendik/İstanbul",
         addressLink:
-          "https://www.google.com/maps/place/Soprano+Lazer+Epilasyon+%7C+Buz+Lazer+%7C+Ni%C5%9Fanta%C5%9F%C4%B1+Lazer+Epilasyon+%7C+Laser+Hair+Removal+istanbul+%7C+Epilation+Laser+Epilation/@41.0518288,28.9890787,17z/data=!3m1!4b1!4m6!3m5!1s0x14cabca23318a107:0x5e988f79a28ac1fd!8m2!3d41.0518288!4d28.9916536!16s%2Fg%2F11csqvqcr0?entry=ttu&g_ep=EgoyMDI1MDYxNS4wIKXMDSoASAFQAw%3D%3D",
+          "",
 
         phoneLabel: "Telefon",
-        phoneText: "+90 212 561 23 22",
-        phoneLink: "tel:+902125612322",
+        phoneText: "+90 111 111 11 11",
+        phoneLink: "tel:+902121111111",
 
         hoursLabel: "Çalışma Saatleri",
         hoursText: "Pazartesi - Cuma: 09:00 - 19:00\nCumartesi: 09:00 - 14:00",
@@ -1662,8 +1662,8 @@ async function main() {
         errorMessage: "Bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
 
         // Email
-        emailRecipient: "eyup17@gmail.com",
-        emailSubject: "Yeni İletişim Formu Mesajı - Veneta Klinik",
+        emailRecipient: "auraclinic@gmail.com",
+        emailSubject: "Yeni İletişim Formu Mesajı - Aura Klinik",
       },
     });
 
@@ -1694,13 +1694,13 @@ async function main() {
         // Contact Cards
         addressLabel: "Address",
         addressText:
-          "Teşvikiye, Halaskargazi St. No:38/B, 34365 Şişli/Istanbul",
+          "Pendik/Istanbul",
         addressLink:
-          "https://www.google.com/maps/place/Soprano+Lazer+Epilasyon+%7C+Buz+Lazer+%7C+Ni%C5%9Fanta%C5%9F%C4%B1+Lazer+Epilasyon+%7C+Laser+Hair+Removal+istanbul+%7C+Epilation+Laser+Epilation/@41.0518288,28.9890787,17z/data=!3m1!4b1!4m6!3m5!1s0x14cabca23318a107:0x5e988f79a28ac1fd!8m2!3d41.0518288!4d28.9916536!16s%2Fg%2F11csqvqcr0?entry=ttu&g_ep=EgoyMDI1MDYxNS4wIKXMDSoASAFQAw%3D%3D",
+          "",
 
         phoneLabel: "Phone",
-        phoneText: "+90 212 561 23 22",
-        phoneLink: "tel:+902125612322",
+        phoneText: "+90 212 111 11 11",
+        phoneLink: "tel:+902121111111",
 
         hoursLabel: "Working Hours",
         hoursText: "Monday - Friday: 09:00 - 19:00\nSaturday: 09:00 - 14:00",
@@ -1721,8 +1721,8 @@ async function main() {
         errorMessage: "An error occurred. Please try again later.",
 
         // Email
-        emailRecipient: "eyup17@gmail.com",
-        emailSubject: "New Contact Form Message - Veneta Clinic",
+        emailRecipient: "auraclinic@gmail.com",
+        emailSubject: "New Contact Form Message - Aura Clinic",
       },
     });
 
@@ -1746,7 +1746,7 @@ async function main() {
         headerTitleHighlight: "En İyi Eller",
         headerSubtitle: "Modern Tıbbın Gücü, Geleneksel Dokunuşlarla Buluşuyor",
         headerDescription:
-          "Veneta Clinic olarak, 15 yılı aşkın tecrübemiz ve uzman kadromuzla size en kaliteli estetik ve medikal hizmetleri sunuyoruz. Güzelliğiniz bizim önceliğimizdir.",
+          "Aura Clinic olarak, 15 yılı aşkın tecrübemiz ve uzman kadromuzla size en kaliteli estetik ve medikal hizmetleri sunuyoruz. Güzelliğiniz bizim önceliğimizdir.",
         headerButtonServices: "Hizmetlerimiz",
         headerButtonContact: "İletişim",
         headerImage: "/images/doctors-team.jpg",
@@ -1757,7 +1757,7 @@ async function main() {
         featuresTitle: "Neden Bizi",
         featuresTitleHighlight: "Seçmelisiniz",
         featuresSubtitle:
-          "Veneta Clinic'te size en iyi hizmeti sunmak için sürekli gelişiyoruz",
+          "Aura Clinic'te size en iyi hizmeti sunmak için sürekli gelişiyoruz",
 
         // Mission Section
         missionDoctorImage: "/images/doctors-team.jpg",
@@ -1766,7 +1766,7 @@ async function main() {
         missionTitle: "Misyonumuz",
         missionSubtitle: "Size En İyi Hizmeti Sunmak",
         missionDescription1:
-          "Veneta Clinic olarak, modern tıp teknolojilerini kullanarak güvenli, etkili ve kişiye özel estetik çözümler sunuyoruz. Her hastamızın benzersiz ihtiyaçlarını anlıyor ve en uygun tedavi planlarını oluşturuyoruz.",
+          "Aura Clinic olarak, modern tıp teknolojilerini kullanarak güvenli, etkili ve kişiye özel estetik çözümler sunuyoruz. Her hastamızın benzersiz ihtiyaçlarını anlıyor ve en uygun tedavi planlarını oluşturuyoruz.",
         missionDescription2:
           "Uzman kadromuz, en son teknolojileri kullanarak size en doğal ve kalıcı sonuçları sunmak için sürekli kendini geliştirmektedir. Güzelliğiniz bizim işimiz, mutluluğunuz bizim başarımız.",
 
@@ -1792,7 +1792,7 @@ async function main() {
         headerTitleHighlight: "Your Beauty",
         headerSubtitle: "Modern Medicine Meets Traditional Touch",
         headerDescription:
-          "At Veneta Clinic, with over 15 years of experience and our expert team, we provide you with the highest quality aesthetic and medical services. Your beauty is our priority.",
+          "At Aura Clinic, with over 15 years of experience and our expert team, we provide you with the highest quality aesthetic and medical services. Your beauty is our priority.",
         headerButtonServices: "Our Services",
         headerButtonContact: "Contact",
         headerImage: "/images/doctors-team.jpg",
@@ -1803,7 +1803,7 @@ async function main() {
         featuresTitle: "Why Choose",
         featuresTitleHighlight: "Us",
         featuresSubtitle:
-          "At Veneta Clinic, we are constantly evolving to provide you with the best service",
+          "At Aura Clinic, we are constantly evolving to provide you with the best service",
 
         // Mission Section
         missionDoctorImage: "/images/doctors-team.jpg",
@@ -1812,7 +1812,7 @@ async function main() {
         missionTitle: "Our Mission",
         missionSubtitle: "To Provide You With The Best Service",
         missionDescription1:
-          "As Veneta Clinic, we offer safe, effective and personalized aesthetic solutions using modern medical technologies. We understand the unique needs of each patient and create the most suitable treatment plans.",
+          "As Aura Clinic, we offer safe, effective and personalized aesthetic solutions using modern medical technologies. We understand the unique needs of each patient and create the most suitable treatment plans.",
         missionDescription2:
           "Our expert team is constantly improving itself to provide you with the most natural and permanent results using the latest technologies. Your beauty is our business, your happiness is our success.",
 
@@ -2605,7 +2605,7 @@ async function main() {
           pricingDescription:
             "Tüm bölgeler için özel paketlerimiz ve kampanyalarımız mevcuttur. Taksit imkanları için bizimle iletişime geçin.",
           pricingCallText: "Fiyat için arayın",
-          whyUsTitle: "Neden Veneta Clinic?",
+          whyUsTitle: "Neden Aura Clinic?",
           faqTitle: "Sıkça Sorulan Sorular",
           ctaTitle: "Ücretsiz Cilt Analizi İçin Hemen İletişime Geçin",
           ctaDescription:
@@ -2640,7 +2640,7 @@ async function main() {
           pricingDescription:
             "We have special packages and campaigns for all areas. Contact us for installment options.",
           pricingCallText: "Call for price",
-          whyUsTitle: "Why Veneta Clinic?",
+          whyUsTitle: "Why Aura Clinic?",
           faqTitle: "Frequently Asked Questions",
           ctaTitle: "Contact Us Now for Free Skin Analysis",
           ctaDescription:

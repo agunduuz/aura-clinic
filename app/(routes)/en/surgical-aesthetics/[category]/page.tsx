@@ -61,7 +61,7 @@ export async function generateMetadata({
 
     const title =
       categoryData.metaTitle ||
-      `${categoryData.title} | Turkey's Best Aesthetic Clinic | Veneta Clinic`;
+      `${categoryData.title} | Turkey's Best Aesthetic Clinic | Aura Clinic`;
     const description =
       categoryData.metaDescription ||
       `${categoryData.title} - Turkey's leading aesthetic clinic. 15+ years of experience, expert doctors, modern technology. Call now for free consultation!`;
@@ -75,14 +75,14 @@ export async function generateMetadata({
         description,
         type: "website",
         locale: "en_US",
-        siteName: "Veneta Clinic",
+        siteName: "Aura Clinic",
         images: categoryData.heroImage
           ? [
               {
                 url: categoryData.heroImage,
                 width: 1200,
                 height: 630,
-                alt: `${categoryData.title} - Veneta Clinic`,
+                alt: `${categoryData.title} - Aura Clinic`,
               },
             ]
           : undefined,
@@ -94,7 +94,7 @@ export async function generateMetadata({
         images: categoryData.heroImage ? [categoryData.heroImage] : undefined,
       },
       alternates: {
-        canonical: `https://venetaclinic.com/en/surgical-aesthetics/${category}`,
+        canonical: `https://auraclinic.com/en/surgical-aesthetics/${category}`,
       },
     };
   } catch (error) {

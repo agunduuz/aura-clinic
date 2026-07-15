@@ -651,8 +651,8 @@ export default function AdminSidebar() {
         {/* Logo */}
         <div className="flex items-center justify-center gap-3 px-6 py-5 border-b border-gray-200">
           <Image
-            src="/veneta-logo.svg"
-            alt="Veneta Clinic"
+            src="/aura-logo.svg"
+            alt="Aura Clinic"
             width={120}
             height={40}
             className="flex-shrink-0"

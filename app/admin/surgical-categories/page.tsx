@@ -1965,7 +1965,7 @@ export default function SurgicalCategoriesPage() {
                                 })
                               }
                               className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                              placeholder="Burun Estetiği İstanbul | Veneta Clinic"
+                              placeholder="Burun Estetiği İstanbul | Aura Clinic"
                             />
                             <p className="text-xs text-gray-500 mt-1">
                               Önerilen uzunluk: 50-60 karakter
@@ -2059,7 +2059,7 @@ export default function SurgicalCategoriesPage() {
                                   "Başlık"}
                               </div>
                               <div className="text-green-600 text-sm">
-                                venetaclinic.com/ameliyatli-estetik/
+                                auraclinic.com/ameliyatli-estetik/
                                 {formData.slug || "slug"}
                               </div>
                               <div className="text-gray-600 text-sm">

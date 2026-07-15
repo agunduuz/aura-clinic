@@ -29,7 +29,7 @@ export async function seedLazerEpilasyon(prisma: PrismaClient) {
         pricingTitle: "Fiyatlar",
         pricingDescription: "Özel paketlerimiz mevcuttur.",
         pricingCallText: "Fiyat için arayın",
-        whyUsTitle: "Neden Veneta Clinic?",
+        whyUsTitle: "Neden Aura Clinic?",
         faqTitle: "Sıkça Sorulan Sorular",
         ctaTitle: "Ücretsiz Analiz İçin İletişime Geçin",
         ctaDescription: "Uzman ekibimiz hazır.",

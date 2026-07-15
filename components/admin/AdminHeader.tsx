@@ -15,7 +15,7 @@ export default function AdminHeader() {
             Dashboard
           </h2>
           <p className="text-xs md:text-sm text-gray-500 hidden sm:block">
-            Veneta Clinic Yönetim Paneli
+            Aura Clinic Yönetim Paneli
           </p>
         </div>
 

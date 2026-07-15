@@ -1,8 +1,8 @@
 {
   "common": {
     "language": "English",
-    "phoneNumber": "+90 (212) 561 23 22",
-    "email": "info@venetaclinic.com",
+    "phoneNumber": "+90 (212) 111 11 11",
+    "email": "info@auraclinic.com",
     "address": "Nişantaşı, Istanbul, Turkey"
   },
   "nav": {
@@ -42,7 +42,7 @@
   "cta": {
     "phoneTooltip": "Call us",
     "whatsappTooltip": "Contact via WhatsApp",
-    "whatsappMessage": "Hello! I would like to get information about Veneta Clinic.",
+    "whatsappMessage": "Hello! I would like to get information about Aura Clinic.",
     "viewDetails": "View Details"
   }
 }

@@ -2,10 +2,10 @@
   "hero": {
     "title": "Lazer Epilasyon İstanbul",
     "titleHighlight": "ALMA SOPRANO ile Garantili Sonuç",
-    "description": "İstanbul'da lazer epilasyon tedavisi için Veneta Klinik'i tercih edin. Dünya'nın en gelişmiş ALMA SOPRANO lazer cihazı, uzman doktorlar ve uygun fiyatlarla kalıcı sonuçlar elde edin.",
+    "description": "İstanbul'da lazer epilasyon tedavisi için Aura Klinik'i tercih edin. Dünya'nın en gelişmiş ALMA SOPRANO lazer cihazı, uzman doktorlar ve uygun fiyatlarla kalıcı sonuçlar elde edin.",
     "buttonReviews": "Müşteri Yorumları",
-    "buttonPhone": "0212 561 23 22",
-    "imageAlt": "ALMA SOPRANO Lazer Epilasyon Cihazı - Veneta Klinik"
+    "buttonPhone": "0212 111 11 11",
+    "imageAlt": "ALMA SOPRANO Lazer Epilasyon Cihazı - Aura Klinik"
   },
   "features": {
     "feature1Title": "ALMA SOPRANO Lazer",
@@ -17,7 +17,7 @@
   },
   "device": {
     "title": "ALMA SOPRANO Lazer Epilasyon Cihazı",
-    "description": "Veneta Klinik'te kullanılan ALMA SOPRANO lazer epilasyon cihazı, dünya standartlarında en gelişmiş teknolojiye sahiptir. FDA onaylı bu cihaz, tüm cilt tipleri ve kıl renkleri için güvenle kullanılabilir.",
+    "description": "Aura Klinik'te kullanılan ALMA SOPRANO lazer epilasyon cihazı, dünya standartlarında en gelişmiş teknolojiye sahiptir. FDA onaylı bu cihaz, tüm cilt tipleri ve kıl renkleri için güvenle kullanılabilir.",
     "featuresTitle": "ALMA SOPRANO Özellikleri",
     "feature1": "755nm, 810nm, 1064nm dalga boyları",
     "feature2": "Tüm cilt tipleri için uygun",
@@ -61,7 +61,7 @@
     "callForPrice": "Fiyat için arayın"
   },
   "whyUs": {
-    "title": "Neden Veneta Klinik?",
+    "title": "Neden Aura Klinik?",
     "reason1Title": "ALMA SOPRANO",
     "reason1Description": "Dünya'nın en gelişmiş lazer cihazı",
     "reason2Title": "Uzman Kadro",
@@ -89,7 +89,7 @@
   "cta": {
     "title": "Hemen Randevu Alın",
     "description": "Ücretsiz muayene ve kişiye özel tedavi planı için hemen iletişime geçin",
-    "buttonPhone": "0212 561 23 22",
+    "buttonPhone": "0212 111 11 11",
     "buttonWhatsApp": "WhatsApp"
   }
 }

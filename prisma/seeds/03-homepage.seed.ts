@@ -61,9 +61,9 @@ export async function seedHomepage(prisma: PrismaClient) {
     await prisma.aboutSection.create({
       data: {
         locale: "tr",
-        title: "Veneta Klinik Hakkında",
+        title: "Aura Klinik Hakkında",
         description:
-          "Veneta Klinik olarak, sağlık ve estetik alanında 15 yıllık deneyimimizle, hastaların yaşam kalitesini artırmayı ve kendilerini daha iyi hissetmelerini sağlamayı amaçlıyoruz. Modern tıbbın imkanlarını kullanarak, güvenli ve etkili tedaviler sunuyoruz.",
+          "Aura Klinik olarak, sağlık ve estetik alanında 15 yıllık deneyimimizle, hastaların yaşam kalitesini artırmayı ve kendilerini daha iyi hissetmelerini sağlamayı amaçlıyoruz. Modern tıbbın imkanlarını kullanarak, güvenli ve etkili tedaviler sunuyoruz.",
         buttonText: "Devamını Oku",
         buttonLink: "/hakkimizda",
         imageUrl: "/images/about-clinic.jpg",
@@ -75,9 +75,9 @@ export async function seedHomepage(prisma: PrismaClient) {
     await prisma.aboutSection.create({
       data: {
         locale: "en",
-        title: "About Veneta Clinic",
+        title: "About Aura Clinic",
         description:
-          "As Veneta Clinic, with our 15 years of experience in health and aesthetics, we aim to improve the quality of life of patients and make them feel better. Using the possibilities of modern medicine, we offer safe and effective treatments.",
+          "As Aura Clinic, with our 15 years of experience in health and aesthetics, we aim to improve the quality of life of patients and make them feel better. Using the possibilities of modern medicine, we offer safe and effective treatments.",
         buttonText: "Read More",
         buttonLink: "/about",
         imageUrl: "/images/about-clinic.jpg",

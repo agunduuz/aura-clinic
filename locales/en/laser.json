@@ -2,10 +2,10 @@
   "hero": {
     "title": "Laser Hair Removal Istanbul",
     "titleHighlight": "Guaranteed Results with ALMA SOPRANO",
-    "description": "Choose Veneta Clinic for laser hair removal treatment in Istanbul. Get permanent results with the world's most advanced ALMA SOPRANO laser device, expert doctors, and affordable prices.",
+    "description": "Choose Aura Clinic for laser hair removal treatment in Istanbul. Get permanent results with the world's most advanced ALMA SOPRANO laser device, expert doctors, and affordable prices.",
     "buttonReviews": "Customer Reviews",
-    "buttonPhone": "0212 561 23 22",
-    "imageAlt": "ALMA SOPRANO Laser Hair Removal Device - Veneta Clinic"
+    "buttonPhone": "0212 111 11 11",
+    "imageAlt": "ALMA SOPRANO Laser Hair Removal Device - Aura Clinic"
   },
   "features": {
     "feature1Title": "ALMA SOPRANO Laser",
@@ -17,7 +17,7 @@
   },
   "device": {
     "title": "ALMA SOPRANO Laser Hair Removal Device",
-    "description": "The ALMA SOPRANO laser hair removal device used at Veneta Clinic features world-class advanced technology. This FDA-approved device can be safely used for all skin types and hair colors.",
+    "description": "The ALMA SOPRANO laser hair removal device used at Aura Clinic features world-class advanced technology. This FDA-approved device can be safely used for all skin types and hair colors.",
     "featuresTitle": "ALMA SOPRANO Features",
     "feature1": "755nm, 810nm, 1064nm wavelengths",
     "feature2": "Suitable for all skin types",
@@ -61,7 +61,7 @@
     "callForPrice": "Call for pricing"
   },
   "whyUs": {
-    "title": "Why Veneta Clinic?",
+    "title": "Why Aura Clinic?",
     "reason1Title": "ALMA SOPRANO",
     "reason1Description": "World's most advanced laser device",
     "reason2Title": "Expert Team",
@@ -89,7 +89,7 @@
   "cta": {
     "title": "Book Your Appointment Now",
     "description": "Contact us now for a free consultation and personalized treatment plan",
-    "buttonPhone": "0212 561 23 22",
+    "buttonPhone": "0212 111 11 11",
     "buttonWhatsApp": "WhatsApp"
   }
 }

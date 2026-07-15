@@ -127,7 +127,7 @@ export async function generateMetadata() {
   const data = await getSurgicalAestheticsData("tr");
 
   return {
-    title: data?.heroTitle || "Ameliyatlı Estetik - Veneta Clinic",
+    title: data?.heroTitle || "Ameliyatlı Estetik - Aura Clinic",
     description:
       data?.heroDescription ||
       "Uzman cerrahlarımızla güvenli ameliyatlı estetik işlemler",

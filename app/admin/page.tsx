@@ -25,7 +25,7 @@ export default async function AdminDashboard() {
               👋 Hoş Geldiniz, {session.user?.name || "Admin"}!
             </h3>
             <p className="text-gray-600">
-              Veneta Clinic yönetim paneline hoş geldiniz. Sol menüden
+              Aura Clinic yönetim paneline hoş geldiniz. Sol menüden
               işlemlerinize başlayabilirsiniz.
             </p>
           </div>

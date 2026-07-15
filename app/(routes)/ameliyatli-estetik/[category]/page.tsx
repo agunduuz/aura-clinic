@@ -66,7 +66,7 @@ export async function generateMetadata({
 
     const title =
       categoryData.metaTitle ||
-      `${categoryData.title} | Türkiye'nin En İyi Estetik Kliniği | Veneta Clinic`;
+      `${categoryData.title} | Türkiye'nin En İyi Estetik Kliniği | Aura Clinic`;
     const description =
       categoryData.metaDescription ||
       `${categoryData.title} konusunda Türkiye'nin lider estetik kliniği. 15+ yıllık deneyim, uzman doktorlar, modern teknoloji. Ücretsiz konsültasyon için hemen arayın!`;
@@ -80,14 +80,14 @@ export async function generateMetadata({
         description,
         type: "website",
         locale: "tr_TR",
-        siteName: "Veneta Clinic",
+        siteName: "Aura Clinic",
         images: categoryData.heroImage
           ? [
               {
                 url: categoryData.heroImage,
                 width: 1200,
                 height: 630,
-                alt: `${categoryData.title} - Veneta Clinic`,
+                alt: `${categoryData.title} - Aura Clinic`,
               },
             ]
           : undefined,
@@ -99,7 +99,7 @@ export async function generateMetadata({
         images: categoryData.heroImage ? [categoryData.heroImage] : undefined,
       },
       alternates: {
-        canonical: `https://venetaclinic.com/ameliyatli-estetik/${category}`,
+        canonical: `https://auraclinic.com/ameliyatli-estetik/${category}`,
       },
     };
   } catch (error) {

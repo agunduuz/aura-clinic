@@ -10,14 +10,14 @@ export async function seedAdminUser(prisma: PrismaClient) {
   console.log("🔄 Seeding admin user...");
 
   const existingAdmin = await prisma.user.findUnique({
-    where: { email: "admin@venetaclinic.com" },
+    where: { email: "admin@auraclinic.com" },
   });
 
   if (!existingAdmin) {
     const hashedPassword = await bcrypt.hash("Admin123!", 10);
     await prisma.user.create({
       data: {
-        email: "admin@venetaclinic.com",
+        email: "admin@auraclinic.com",
         password: hashedPassword,
         name: "Admin User",
         role: "admin",

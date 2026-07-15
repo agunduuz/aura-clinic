@@ -2,10 +2,10 @@
   "hero": {
     "title": "Surgical Aesthetics Istanbul",
     "subtitle": "Guaranteed Results with Expert Surgeons",
-    "description": "Choose Veneta Clinic for surgical aesthetic treatments in Istanbul. Get natural and permanent results with the latest techniques, expert surgeons, and affordable prices in facial, body, and breast aesthetics.",
+    "description": "Choose Aura Clinic for surgical aesthetic treatments in Istanbul. Get natural and permanent results with the latest techniques, expert surgeons, and affordable prices in facial, body, and breast aesthetics.",
     "ctaReviews": "Customer Reviews",
-    "ctaPhone": "0212 561 23 22",
-    "imageAlt": "Surgical Aesthetics - Veneta Clinic Istanbul"
+    "ctaPhone": "0212 111 11 11",
+    "imageAlt": "Surgical Aesthetics - Aura Clinic Istanbul"
   },
   "features": {
     "feature1Title": "Expert Surgeons",
@@ -80,7 +80,7 @@
     "step3Description": "Recovery process is monitored with regular check-ups, natural and permanent results are achieved."
   },
   "whyUs": {
-    "title": "Why Choose Veneta Clinic?",
+    "title": "Why Choose Aura Clinic?",
     "reason1Title": "15+ Years Experience",
     "reason1Description": "Thousands of successful surgeries",
     "reason2Title": "Expert Surgeons",
@@ -106,7 +106,7 @@
   "cta": {
     "title": "Book Your Appointment Now",
     "description": "Contact us immediately for free consultation and personalized treatment plan",
-    "ctaPhone": "0212 561 23 22",
+    "ctaPhone": "0212 111 11 11",
     "ctaWhatsApp": "WhatsApp"
   }
 }

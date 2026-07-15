@@ -125,7 +125,7 @@ export async function generateMetadata() {
   const data = await getSurgicalAestheticsData("en");
 
   return {
-    title: data?.heroTitle || "Surgical Aesthetics - Veneta Clinic",
+    title: data?.heroTitle || "Surgical Aesthetics - Aura Clinic",
     description:
       data?.heroDescription ||
       "Safe surgical aesthetic procedures with our expert surgeons",

@@ -583,7 +583,7 @@ export default function BlogAdminPage() {
                                   "Başlık"}
                               </div>
                               <div className="text-green-600 text-sm">
-                                venetaclinic.com/blog/
+                                auraclinic.com/blog/
                                 {formData.slug || "slug"}
                               </div>
                               <div className="text-gray-600 text-sm">

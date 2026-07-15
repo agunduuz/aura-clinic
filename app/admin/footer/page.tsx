@@ -1,10 +1,10 @@
 // app/admin/footer/page.tsx
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
 import AdminHeader from "@/components/admin/AdminHeader";
 import ProtectedPage from "@/components/admin/ProtectedPage";
-import { Trash2, Plus, Save } from "lucide-react";
+import { Plus, Save, Trash2 } from "lucide-react";
+import { useCallback, useEffect, useState } from "react";
 
 type Locale = "tr" | "en";
 
@@ -208,7 +208,7 @@ export default function FooterEditor() {
                       setContent({ ...content, phone: e.target.value })
                     }
                     className="w-full px-3 md:px-4 py-2 text-sm md:text-base border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#b2d6a1] focus:border-transparent"
-                    placeholder="+90 212 561 23 22"
+                    placeholder="+90 212 111 11 11"
                   />
                 </div>
 
@@ -241,7 +241,7 @@ export default function FooterEditor() {
                       setContent({ ...content, email: e.target.value })
                     }
                     className="w-full px-3 md:px-4 py-2 text-sm md:text-base border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#b2d6a1] focus:border-transparent"
-                    placeholder="info@venetaclinic.com"
+                    placeholder="info@auraclinic.com"
                   />
                 </div>
 
@@ -283,7 +283,7 @@ export default function FooterEditor() {
                       })
                     }
                     className="w-full px-3 md:px-4 py-2 text-sm md:text-base border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#b2d6a1] focus:border-transparent"
-                    placeholder="https://facebook.com/venetaclinic"
+                    placeholder="https://facebook.com/yourpage"
                   />
                 </div>
 
@@ -301,7 +301,7 @@ export default function FooterEditor() {
                       })
                     }
                     className="w-full px-3 md:px-4 py-2 text-sm md:text-base border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#b2d6a1] focus:border-transparent"
-                    placeholder="https://instagram.com/venetaclinic"
+                    placeholder="https://instagram.com/yourpage"
                   />
                 </div>
 
@@ -319,7 +319,7 @@ export default function FooterEditor() {
                       })
                     }
                     className="w-full px-3 md:px-4 py-2 text-sm md:text-base border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#b2d6a1] focus:border-transparent"
-                    placeholder="https://twitter.com/venetaclinic"
+                    placeholder="https://twitter.com/yourpage"
                   />
                 </div>
 
@@ -337,7 +337,7 @@ export default function FooterEditor() {
                       })
                     }
                     className="w-full px-3 md:px-4 py-2 text-sm md:text-base border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#b2d6a1] focus:border-transparent"
-                    placeholder="https://linkedin.com/company/venetaclinic"
+                    placeholder="https://linkedin.com/company/yourpage"
                   />
                 </div>
               </div>
@@ -360,7 +360,7 @@ export default function FooterEditor() {
                     setContent({ ...content, copyrightText: e.target.value })
                   }
                   className="w-full px-3 md:px-4 py-2 text-sm md:text-base border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#b2d6a1] focus:border-transparent"
-                  placeholder="© 2024 Veneta Clinic. Tüm hakları saklıdır."
+                  placeholder="© 2024 Aura Clinic. Tüm hakları saklıdır."
                 />
               </div>
             </div>
