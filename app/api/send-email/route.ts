@@ -2,11 +2,19 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-// Resend client'ı başlat
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: NextRequest) {
   try {
+    if (!process.env.RESEND_API_KEY) {
+      console.error("RESEND_API_KEY ortam değişkeni tanımlı değil");
+      return NextResponse.json(
+        { error: "Email servisi yapılandırılmamış" },
+        { status: 500 }
+      );
+    }
+
+    // Resend client'ı başlat
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
     // Request body'den form verilerini al
     const { from_name, from_email, phone, message } = await request.json();
 
