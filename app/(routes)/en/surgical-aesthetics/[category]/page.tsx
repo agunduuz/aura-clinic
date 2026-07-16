@@ -94,7 +94,7 @@ export async function generateMetadata({
         images: categoryData.heroImage ? [categoryData.heroImage] : undefined,
       },
       alternates: {
-        canonical: `https://auraclinic.com/en/surgical-aesthetics/${category}`,
+        canonical: `/en/surgical-aesthetics/${category}`,
       },
     };
   } catch (error) {

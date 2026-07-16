@@ -99,7 +99,7 @@ export async function generateMetadata({
         images: categoryData.heroImage ? [categoryData.heroImage] : undefined,
       },
       alternates: {
-        canonical: `https://auraclinic.com/ameliyatli-estetik/${category}`,
+        canonical: `/ameliyatli-estetik/${category}`,
       },
     };
   } catch (error) {
