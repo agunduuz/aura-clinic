@@ -5,7 +5,7 @@ import { useTranslation, useLocale } from "@/lib/i18n/context";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 
 type Procedure = {
   id: string;
@@ -53,8 +53,14 @@ const Procedures = ({ data }: ProceduresProps) => {
     }
   }, [activeFilter, locale]);
 
-  // Fetch procedures from API if no data provided
+  // Skip the first client-side fetch when data was already provided by the server
+  const skipInitialFetch = useRef(Boolean(data));
+
   useEffect(() => {
+    if (skipInitialFetch.current) {
+      skipInitialFetch.current = false;
+      return;
+    }
     fetchProcedures();
   }, [fetchProcedures]);
 
