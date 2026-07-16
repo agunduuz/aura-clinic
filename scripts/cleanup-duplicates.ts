@@ -35,7 +35,7 @@ async function cleanupDuplicates() {
         categoryId: group.categoryId,
         order: group.order,
       },
-      orderBy: { createdAt: "asc" },
+      orderBy: { id: "asc" },
     });
 
     // Keep first, delete rest
@@ -75,7 +75,7 @@ async function cleanupDuplicates() {
         categoryId: group.categoryId,
         order: group.order,
       },
-      orderBy: { createdAt: "asc" },
+      orderBy: { id: "asc" },
     });
 
     const toDelete = duplicates.slice(1);
@@ -114,7 +114,7 @@ async function cleanupDuplicates() {
         categoryId: group.categoryId,
         order: group.order,
       },
-      orderBy: { createdAt: "asc" },
+      orderBy: { id: "asc" },
     });
 
     const toDelete = duplicates.slice(1);
@@ -153,7 +153,7 @@ async function cleanupDuplicates() {
         categoryId: group.categoryId,
         order: group.order,
       },
-      orderBy: { createdAt: "asc" },
+      orderBy: { id: "asc" },
     });
 
     const toDelete = duplicates.slice(1);
@@ -192,7 +192,7 @@ async function cleanupDuplicates() {
         categoryId: group.categoryId,
         order: group.order,
       },
-      orderBy: { createdAt: "asc" },
+      orderBy: { id: "asc" },
     });
 
     const toDelete = duplicates.slice(1);

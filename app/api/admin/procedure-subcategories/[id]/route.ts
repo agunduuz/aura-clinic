@@ -6,7 +6,7 @@ import { prisma } from "@/lib/prisma";
 // GET - Get single procedure subcategory
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } },
+  { params }: { params: Promise<{ id: string }> },
 ) {
   try {
     const session = await auth();
@@ -14,8 +14,10 @@ export async function GET(
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
+    const { id } = await params;
+
     const subcategory = await prisma.procedureSubcategory.findUnique({
-      where: { id: params.id },
+      where: { id },
       include: {
         features: { orderBy: { order: "asc" } },
         deviceItems: { orderBy: { order: "asc" } },
@@ -43,7 +45,7 @@ export async function GET(
 // PUT - Update procedure subcategory
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: string } },
+  { params }: { params: Promise<{ id: string }> },
 ) {
   try {
     const session = await auth();
@@ -51,6 +53,7 @@ export async function PUT(
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
+    const { id } = await params;
     const body = await request.json();
     const {
       features,
@@ -63,21 +66,21 @@ export async function PUT(
     } = body;
 
     // Update main data
-    const subcategory = await prisma.procedureSubcategory.update({
-      where: { id: params.id },
+    await prisma.procedureSubcategory.update({
+      where: { id },
       data: subcategoryData,
     });
 
     // Update relations if provided
     if (features !== undefined) {
       await prisma.procedureSubcategoryFeature.deleteMany({
-        where: { subcategoryId: params.id },
+        where: { subcategoryId: id },
       });
       if (features.length > 0) {
         await prisma.procedureSubcategoryFeature.createMany({
-          data: features.map((f: any, idx: number) => ({
+          data: features.map((f: Record<string, unknown>, idx: number) => ({
             ...f,
-            subcategoryId: params.id,
+            subcategoryId: id,
             order: idx + 1,
           })),
         });
@@ -86,13 +89,13 @@ export async function PUT(
 
     if (deviceItems !== undefined) {
       await prisma.procedureSubcategoryDeviceItem.deleteMany({
-        where: { subcategoryId: params.id },
+        where: { subcategoryId: id },
       });
       if (deviceItems.length > 0) {
         await prisma.procedureSubcategoryDeviceItem.createMany({
-          data: deviceItems.map((d: any, idx: number) => ({
+          data: deviceItems.map((d: Record<string, unknown>, idx: number) => ({
             ...d,
-            subcategoryId: params.id,
+            subcategoryId: id,
             order: idx + 1,
           })),
         });
@@ -101,28 +104,30 @@ export async function PUT(
 
     if (treatmentAreas !== undefined) {
       await prisma.procedureSubcategoryTreatmentArea.deleteMany({
-        where: { subcategoryId: params.id },
+        where: { subcategoryId: id },
       });
       if (treatmentAreas.length > 0) {
         await prisma.procedureSubcategoryTreatmentArea.createMany({
-          data: treatmentAreas.map((t: any, idx: number) => ({
-            ...t,
-            subcategoryId: params.id,
-            order: idx + 1,
-          })),
+          data: treatmentAreas.map(
+            (t: Record<string, unknown>, idx: number) => ({
+              ...t,
+              subcategoryId: id,
+              order: idx + 1,
+            }),
+          ),
         });
       }
     }
 
     if (pricing !== undefined) {
       await prisma.procedureSubcategoryPricing.deleteMany({
-        where: { subcategoryId: params.id },
+        where: { subcategoryId: id },
       });
       if (pricing.length > 0) {
         await prisma.procedureSubcategoryPricing.createMany({
-          data: pricing.map((p: any, idx: number) => ({
+          data: pricing.map((p: Record<string, unknown>, idx: number) => ({
             ...p,
-            subcategoryId: params.id,
+            subcategoryId: id,
             order: idx + 1,
           })),
         });
@@ -131,13 +136,13 @@ export async function PUT(
 
     if (whyUs !== undefined) {
       await prisma.procedureSubcategoryWhyUs.deleteMany({
-        where: { subcategoryId: params.id },
+        where: { subcategoryId: id },
       });
       if (whyUs.length > 0) {
         await prisma.procedureSubcategoryWhyUs.createMany({
-          data: whyUs.map((w: any, idx: number) => ({
+          data: whyUs.map((w: Record<string, unknown>, idx: number) => ({
             ...w,
-            subcategoryId: params.id,
+            subcategoryId: id,
             order: idx + 1,
           })),
         });
@@ -146,13 +151,13 @@ export async function PUT(
 
     if (faqs !== undefined) {
       await prisma.procedureSubcategoryFAQ.deleteMany({
-        where: { subcategoryId: params.id },
+        where: { subcategoryId: id },
       });
       if (faqs.length > 0) {
         await prisma.procedureSubcategoryFAQ.createMany({
-          data: faqs.map((f: any, idx: number) => ({
+          data: faqs.map((f: Record<string, unknown>, idx: number) => ({
             ...f,
-            subcategoryId: params.id,
+            subcategoryId: id,
             order: idx + 1,
           })),
         });
@@ -161,7 +166,7 @@ export async function PUT(
 
     // Fetch updated data
     const updated = await prisma.procedureSubcategory.findUnique({
-      where: { id: params.id },
+      where: { id },
       include: {
         features: { orderBy: { order: "asc" } },
         deviceItems: { orderBy: { order: "asc" } },
@@ -185,7 +190,7 @@ export async function PUT(
 // DELETE - Delete procedure subcategory
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } },
+  { params }: { params: Promise<{ id: string }> },
 ) {
   try {
     const session = await auth();
@@ -193,9 +198,11 @@ export async function DELETE(
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
+    const { id } = await params;
+
     // Cascade delete will handle relations automatically
     await prisma.procedureSubcategory.delete({
-      where: { id: params.id },
+      where: { id },
     });
 
     return NextResponse.json({ success: true });

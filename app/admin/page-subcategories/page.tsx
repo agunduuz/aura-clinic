@@ -55,6 +55,7 @@ export default function PageSubcategoriesAdmin() {
     loadSubcategories();
     setSelectedSubcategory(null);
     setIsEditing(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedPage, locale]);
 
   // Create new subcategory
@@ -352,8 +353,8 @@ export default function PageSubcategoriesAdmin() {
                         Görsel
                       </label>
                       <ImageUpload
-                        value={selectedSubcategory.imageUrl}
-                        onChange={(url) =>
+                        currentImage={selectedSubcategory.imageUrl}
+                        onUploadComplete={(url) =>
                           setSelectedSubcategory({
                             ...selectedSubcategory,
                             imageUrl: url,
