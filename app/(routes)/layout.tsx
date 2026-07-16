@@ -1,8 +1,11 @@
 // app/(routes)/layout.tsx
 import type { Metadata } from "next";
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://aura-clinic-six.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://auraclinic.com"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Aura Clinic - Estetik ve Plastik Cerrahi Merkezi",
     template: "%s | Aura Clinic",
@@ -54,7 +57,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://auraclinic.com",
+    url: siteUrl,
     siteName: "Aura Clinic",
     title: "Aura Clinic - Estetik ve Plastik Cerrahi Merkezi",
     description:

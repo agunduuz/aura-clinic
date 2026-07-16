@@ -16,9 +16,9 @@ const CallToAction = ({ data }: CallToActionProps) => {
   const title = data?.title || t("home.cta.title");
   const description = data?.description || t("home.cta.description");
   const button1Text = data?.button1Text || t("home.cta.button");
-  const button1Link = data?.button1Link || "#";
+  const button1Link = data?.button1Link || "/iletisim";
   const button2Text = data?.button2Text || t("home.cta.buttonSecondary");
-  const button2Link = data?.button2Link || "#";
+  const button2Link = data?.button2Link || "/iletisim";
 
   return (
     <section className="relative py-16 bg-primary/70 overflow-hidden">
